@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BaseConverterController">
+   <children>
+      <Label layoutX="161.0" layoutY="14.0" text="Base Converter" />
+      <Label layoutX="179.0" layoutY="60.0" text="Number" />
+      <Label layoutX="61.0" layoutY="143.0" text="From Base" />
+      <Label layoutX="296.0" layoutY="143.0" text="To Base" />
+      <Label layoutX="186.0" layoutY="251.0" text="Result" />
+      <TextField fx:id="myNumberTextField" layoutX="127.0" layoutY="89.0" onAction="#handle" />
+      <TextField fx:id="myFromBaseTextField" layoutX="14.0" layoutY="160.0" onAction="#handle" />
+      <TextField fx:id="myToBaseTextField" layoutX="242.0" layoutY="160.0" onAction="#handle" />
+      <TextArea fx:id="myResultTextArea" layoutX="103.0" layoutY="274.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="myButton" layoutX="103.0" layoutY="202.0" mnemonicParsing="false" onAction="#handle" text="Convert" />
+      <Button fx:id="mySwapButton" layoutX="254.0" layoutY="202.0" mnemonicParsing="false" onMouseClicked="#swap" text="Swap" />
+      <Button fx:id="myBaseCalculator" layoutX="289.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#setLandingScene" text="Landing Page" />
+   </children>
+</AnchorPane>
